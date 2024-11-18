@@ -20,7 +20,7 @@ public class Control
     }
     
     public void volumenUp() {
-        this.tv.volumenUp();  // Cambiar para incrementar el volumen
+        this.tv.volumenUp(); 
     }
     
     public void volumenDown() {
@@ -33,18 +33,3 @@ public class Control
     
     public void setVolumen(int volumen) {
         this.tv.setVolumen(volumen);
-    }
-
-    public void enlazar(TV tv) {
-        this.tv = tv;
-        tv.setControl(this);
-    }
-
-    public void setTV(TV tv) {
-        this.tv = tv;
-    }
-    
-    public TV getTv() {
-        return this.tv;
-    }   
-}
