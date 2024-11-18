@@ -7,6 +7,7 @@ public class Control
     public void turnOn() {
         this.tv.turnOn();
     }
+    
     public void turnOff() {
         this.tv.turnOff();
     }
@@ -20,7 +21,7 @@ public class Control
     }
     
     public void volumenUp() {
-        this.tv.volumenUp(); 
+        this.tv.volumenUp();  // Corregir para incrementar el volumen
     }
     
     public void volumenDown() {
@@ -33,3 +34,18 @@ public class Control
     
     public void setVolumen(int volumen) {
         this.tv.setVolumen(volumen);
+    }
+
+    public void enlazar(TV tv) {
+        this.tv = tv;
+        tv.setControl(this);
+    }
+
+    public void setTV(TV tv) {
+        this.tv = tv;
+    }
+    
+    public TV getTv() {
+        return this.tv;
+    }   
+}
