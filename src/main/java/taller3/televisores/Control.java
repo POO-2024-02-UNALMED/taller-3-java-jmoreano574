@@ -49,7 +49,7 @@ public class Control
 		tv.setControl(this);
     }
 
-    public void setNumTV(TV tv)
+    public void setTV(TV tv)
     {
         this.tv = tv;
     }
