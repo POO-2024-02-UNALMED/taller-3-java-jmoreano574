@@ -8,15 +8,15 @@ public class TV
     private boolean estado;
     private int volumen;
     private Control control;
-    private static int numTv;
-    
+    private static int numTv = 0;
+
     public TV(Marca marca, boolean estado) {
         this.marca = marca;
         this.estado = estado;
         this.canal = 1;
         this.volumen = 1;
         this.precio = 500;
-        TV.numTv++;
+        TV.numTv++;  // Incrementar el contador de televisores
     }
 
     // Método getter para el número de televisores
@@ -86,25 +86,25 @@ public class TV
     // Métodos para cambio de canal y volumen
     public void canalUp() {
         if (estado && canal < 120) {
-            this.setCanal(this.canal + 1);
+            this.canal++;
         }
     }
 
     public void canalDown() {
         if (estado && canal > 1) {
-            this.setCanal(this.canal - 1);
+            this.canal--;
         }
     }
 
     public void volumenUp() {
         if (estado && volumen < 7) {
-            this.setVolumen(this.volumen + 1);
+            this.volumen++;
         }
     }
 
     public void volumenDown() {
         if (estado && volumen > 0) {
-            this.setVolumen(this.volumen - 1);
+            this.volumen--;
         }
     }
 
