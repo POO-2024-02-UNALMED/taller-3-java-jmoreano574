@@ -20,7 +20,7 @@ public class Control
     }
     
     public void volumenUp() {
-        this.tv.volumenUp();
+        this.tv.volumenUp();  // Cambiar para incrementar el volumen
     }
     
     public void volumenDown() {
