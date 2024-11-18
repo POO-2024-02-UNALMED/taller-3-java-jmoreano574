@@ -2,6 +2,10 @@ package taller3.televisores;
 
 public class TV 
 {
+
+    public static int getNumTv() {
+        return numTv;
+    }
     private Marca marca;
     private int canal;
     private int precio;
@@ -75,7 +79,7 @@ public class TV
     {
         this.setCanal(this.canal - 1);
     }
-    public void volumenUP()
+    public void volumenUp()
     {
         this.setVolumen(this.canal + 1);
     }
@@ -86,7 +90,7 @@ public class TV
     //condiciones para cambiar canal y volumen
     public void setCanal(int canal)
     {
-    if (this.estado = true && canal > 0 && canal <= 120)
+    if (this.estado = true && canal >= 1 && canal <= 120)
             this.canal = canal; 
     }
     public void setVolumen(int volumen)
