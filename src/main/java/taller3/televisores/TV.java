@@ -20,35 +20,35 @@ public class TV
         TV.numTv++;
         //metodo setter y getter
     }
-    public void set_Marca(Marca marca)
+    public void setMarca(Marca marca)
     {
         this.marca=marca;
     }
-    public Marca get_Marca()
+    public Marca getMarca()
     {
         return this.marca;
     }
-    public int get_canal()
+    public int getCanal()
     {
         return this.canal;
     }
-    public void set_precio(int precio)
+    public void setPrecio(int precio)
     {
         this.precio=precio;
     }
-    public int get_precio()
+    public int getPrecio()
     {
         return this.precio;
     }
-    public int get_volumen()
+    public int getVolumen()
     {
         return this.volumen;
     }
-    public void set_control(Control control)
+    public void setControl(Control control)
     {
         this.control=control;
     }
-    public Control get_control()
+    public Control getControl()
     {
         return this.control;
     }
@@ -62,34 +62,34 @@ public class TV
         this.estado=false;
     }
     //metodos get estado para acambiar de encendido a apagado
-    public boolean get_estado()
+    public boolean getEstado()
     {
         return this.estado;
     }
     //metodos para cambio de canal y volumen
     public void canalUp ()
     {
-        this.set_canal(this.canal + 1);
+        this.setCanal(this.canal + 1);
     }
     public void canalDown()
     {
-        this.set_canal(this.canal - 1);
+        this.setCanal(this.canal - 1);
     }
     public void volumenUP()
     {
-        this.set_volumen(this.canal + 1);
+        this.setVolumen(this.canal + 1);
     }
     public void volumenDown()
     {
-        this.set_volumen(this.canal - 1);
+        this.setVolumen(this.canal - 1);
     }
     //condiciones para cambiar canal y volumen
-    public void set_canal(int canal)
+    public void setCanal(int canal)
     {
     if (this.estado = true && canal > 0 && canal <= 120)
             this.canal = canal; 
     }
-    public void set_volumen(int volumen)
+    public void setVolumen(int volumen)
     {
     if (this.estado = true && volumen >= 0 && volumen <= 7)
             this.volumen = volumen;
